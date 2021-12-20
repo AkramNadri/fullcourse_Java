@@ -108,26 +108,56 @@
 
 // ACCEPTING USER INPUT
 // Scanner class must be imported before we can use
-import java.util.Scanner; // Scanner class is found in this util package.
+// import java.util.Scanner; // Scanner class is found in this util package.
+
+// public class Test {
+//     public static void main(String[]args){
+        
+//         Scanner scanner = new Scanner(System.in);
+
+//         System.out.println("What is your name?");
+//         String name = scanner.nextLine();
+
+//         System.out.println("how old are you?");
+//         int age = scanner.nextInt();
+
+//         scanner.nextLine(); // clearing scanner
+        
+//         System.out.println("what is your favourite food?");
+//         String food = scanner.nextLine();
+
+//         System.out.println("Hello " + name);
+//         System.out.println("your are " + age + " years old");
+//         System.out.println("you like " + food);
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// EXPRESSIONS
+// expression = operands & operators
+// operands = values, variables, numbers, quantity
+// operators = + - * / %
+
 
 public class Test {
     public static void main(String[]args){
-        
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("What is your name?");
-        String name = scanner.nextLine();
+        int friends = 10;
 
-        System.out.println("how old are you?");
-        int age = scanner.nextInt();
+        friends = friends + 1;
 
-        scanner.nextLine(); // clearing scanner
-        
-        System.out.println("what is your favourite food?");
-        String food = scanner.nextLine();
+        friends = friends % 3; // modulas gives us the remainder
 
-        System.out.println("Hello " + name);
-        System.out.println("your are " + age + " years old");
-        System.out.println("you like " + food);
+        // shorthand way of incrementing
+        friends++;
+        // decrement
+        friends--;
+
+        // since we are using int, the remainder of the value will be truncated.
+        System.out.println(friends);
     }
 }
