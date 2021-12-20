@@ -1,20 +1,40 @@
-import javax.swing.event.SwingPropertyChangeSupport;
-import javax.swing.plaf.synth.SynthSeparatorUI;
 
-public class Test{
+// public class Test {
+//     public static void main(String[]args){
+
+//     }
+// }
+
+// public class Test{
 
 
-    public static void main(String[]args){
-        System.out.println("hello Ak");
+//     public static void main(String[]args){
+        
+//         int x; // decleration
+//         x = 123; // assignment
 
-        String ak = "Akram";
-        String aN = "An";
-        System.out.println("first name is " + ak + " and friend is " + aN);
-    }
+//         int y = 321; // initialization1`
+
+//         float z = 3.14f; // float requires "f" end of value
+
+//         boolean r = false;
+
+//         char symbol = '@'; // place single quotes for char 
+
+//         // String is reference type must being with capital letter
+//         String name = "Akram"; 
+
+//         System.out.println(x);
+//         System.out.println("My number is: " + y);
+//         System.out.println(z);
+//         System.out.println(r);
+//         System.out.println(name);
+//         System.out.println(symbol);
+//     }
 
 
     
-} 
+// } 
 
 // PRIMITIVE            VS     REFERENCE
 // 8 types                      unlimited
@@ -48,8 +68,66 @@ public class Test{
 // Initialization
 // int x = 123;
 
-// testing 1234
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
 
-// 1234XXXXXX
+// SWAP TWO VARIABLES
+// manually switching the value of 2 values by using a 3rd temporary variable.
 
-// Testing repo
+// public class Test {
+
+//     public static void main(String[]args){
+
+//         String x = "water";
+//         String y = "koolaid";
+
+//         // we require a third temporary variable to store value and use to swap 
+//         String temp = null;
+
+//         // now we empty variable x into temp
+//         temp = x;
+//         // assign y to x
+//         x = y;
+//         // now take temp variable and store into y
+//         y = temp;
+
+//         System.out.println("x: " + x);
+//         System.out.println("y: " + y);
+//     }
+
+
+// }
+
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// ACCEPTING USER INPUT
+// Scanner class must be imported before we can use
+import java.util.Scanner; // Scanner class is found in this util package.
+
+public class Test {
+    public static void main(String[]args){
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+        String name = scanner.nextLine();
+
+        System.out.println("how old are you?");
+        int age = scanner.nextInt();
+
+        scanner.nextLine(); // clearing scanner
+        
+        System.out.println("what is your favourite food?");
+        String food = scanner.nextLine();
+
+        System.out.println("Hello " + name);
+        System.out.println("your are " + age + " years old");
+        System.out.println("you like " + food);
+    }
+}
