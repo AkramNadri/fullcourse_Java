@@ -143,21 +143,46 @@
 // operators = + - * / %
 
 
+// public class Test {
+//     public static void main(String[]args){
+
+//         int friends = 10;
+
+//         friends = friends + 1;
+
+//         friends = friends % 3; // modulas gives us the remainder
+
+//         // shorthand way of incrementing
+//         friends++;
+//         // decrement
+//         friends--;
+
+//         // since we are using int, the remainder of the value will be truncated.
+//         System.out.println(friends);
+//     }
+// }
+
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+import javax.swing.JOptionPane;
+// GUI intro - Graphical user interface
+
 public class Test {
     public static void main(String[]args){
 
-        int friends = 10;
+        String name = JOptionPane.showInputDialog("Enter your name");
+        JOptionPane.showMessageDialog(null, "hello " + name);
 
-        friends = friends + 1;
+        // showInputDialog its going to return a String, but were attempting to place an integer in here. Must use Integer.parseInt - will parseInt method will convert it to integer that we can store it within our integer variable age.
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
 
-        friends = friends % 3; // modulas gives us the remainder
-
-        // shorthand way of incrementing
-        friends++;
-        // decrement
-        friends--;
-
-        // since we are using int, the remainder of the value will be truncated.
-        System.out.println(friends);
+        // Here we are parsing for Double value
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+        JOptionPane.showMessageDialog(null, "You are " +height+ " cm tall");
     }
 }
