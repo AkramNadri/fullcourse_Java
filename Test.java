@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 // public class Test {
 //     public static void main(String[]args){
@@ -168,21 +169,81 @@
 ///////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////
 
-import javax.swing.JOptionPane;
+// import javax.swing.JOptionPane;
 // GUI intro - Graphical user interface
 
-public class Test {
-    public static void main(String[]args){
+// public class Test {
+//     public static void main(String[]args){
 
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "hello " + name);
+//         String name = JOptionPane.showInputDialog("Enter your name");
+//         JOptionPane.showMessageDialog(null, "hello " + name);
 
-        // showInputDialog its going to return a String, but were attempting to place an integer in here. Must use Integer.parseInt - will parseInt method will convert it to integer that we can store it within our integer variable age.
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        JOptionPane.showMessageDialog(null, "You are " + age + " years old");
+//         // showInputDialog its going to return a String, but were attempting to place an integer in here. Must use Integer.parseInt - will parseInt method will convert it to integer that we can store it within our integer variable age.
+//         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+//         JOptionPane.showMessageDialog(null, "You are " + age + " years old");
 
-        // Here we are parsing for Double value
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
-        JOptionPane.showMessageDialog(null, "You are " +height+ " cm tall");
-    }
-}
+//         // Here we are parsing for Double value
+//         double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+//         JOptionPane.showMessageDialog(null, "You are " +height+ " cm tall");
+//     }
+// }
+
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// MATH CLASS
+
+
+// public class Test {
+    // public static void main(String[]args){
+
+    //     double x = 3.14;
+    //     double y = -10;
+
+    //    // compares the values and prints out higher one.
+    //    double max =  Math.max(x, y);
+    //    // prints least  
+    //    double min =  Math.min(x, y);
+
+    //    // will print absolute number
+    //    double abs = Math.abs(y);
+
+    //    // prints the sqaure root of number
+    //    double sqrt = Math.sqrt(x);
+
+    //    // will always round down
+    //    double floor = Math.floor(x);
+
+
+    //    System.out.println(max);
+    //    System.out.println(min);
+    //    System.out.println(abs);
+    //    System.out.println(sqrt);
+    //    System.out.println(floor);
+
+    // Find the hypotenuse of triangle
+//     double x;
+//     double y;
+//     double z;
+
+//     Scanner scanner = new Scanner(System.in);
+
+//     System.out.println("Enter side x: ");
+//     x = scanner.nextDouble();
+
+//     System.out.println("Enter side y: ");
+//     y = scanner.nextDouble();
+
+
+//     z = Math.sqrt((x*x) + (y*y));
+
+//     System.out.println("The hypotenuse is: " +z);
+
+//     scanner.close();
+    
+
+//     }
+// }
