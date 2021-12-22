@@ -195,7 +195,7 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////
 
 // MATH CLASS
-
+// more information on Math class in Java documentation.
 
 // public class Test {
     // public static void main(String[]args){
