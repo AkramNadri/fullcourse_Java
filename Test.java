@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 // public class Test {
@@ -247,3 +248,30 @@ import java.util.Scanner;
 
 //     }
 // }
+
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+
+// GENERATE RANDOM NUMBERS
+import java.util.Random;
+
+
+public class Test {
+    public static void main(String[]args){
+
+        Random random = new Random();
+
+        // we pass in a value to nextInt method to set range of numbers to randomize.
+        int x = random.nextInt(6)+1;
+
+        double y = random.nextDouble(10)+1;
+
+        boolean z = random.nextBoolean();
+
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+    }
+}
