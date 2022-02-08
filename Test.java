@@ -282,3 +282,21 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////
 
 // IF/ELSE STATEMENTS
+
+public class Test {
+
+public static void main(String [] args){
+
+double x = 7;
+double y = 5;
+
+if(y >= x) {
+    System.out.println("Y is greater then X");
+} else {
+    System.out.println("X is greater then Y");
+}
+
+
+}
+
+}
