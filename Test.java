@@ -255,26 +255,27 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////
 
 // GENERATE RANDOM NUMBERS
-// import java.util.Random;
+import java.util.Random;
 
 
-// public class Test {
-//     public static void main(String[]args){
+public class Test {
+    public static void main(String[]args){
 
-//         Random random = new Random();
+        Random random = new Random();
 
-//         // we pass in a value to nextInt method to set range of numbers to randomize.
-//         int x = random.nextInt(6)+1;
+        // we pass in a value to nextInt method to set range of numbers to randomize.
+        int x = random.nextInt(6)+1;
 
-//         double y = random.nextDouble(10)+1;
 
-//         boolean z = random.nextBoolean();
+        double y = random.nextDouble(10)+1;
 
-//         System.out.println(x);
-//         System.out.println(y);
-//         System.out.println(z);
-//     }
-// }
+        boolean z = random.nextBoolean();
+
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+    }
+}
 
 
 ///////////////////////////////////////////////////////////
@@ -283,20 +284,20 @@ import java.util.Scanner;
 
 // IF/ELSE STATEMENTS
 
-public class Test {
+// public class Test {
 
-public static void main(String [] args){
+// public static void main(String [] args){
 
-double x = 7;
-double y = 5;
+// double x = 7;
+// double y = 5;
 
-if(y >= x) {
-    System.out.println("Y is greater then X");
-} else {
-    System.out.println("X is greater then Y");
-}
+// if(y >= x) {
+//     System.out.println("Y is greater then X");
+// } else {
+//     System.out.println("X is greater then Y");
+// }
 
 
-}
+// }
 
-}
+// }
