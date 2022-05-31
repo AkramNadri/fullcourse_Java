@@ -335,17 +335,64 @@ import java.util.Scanner;
 
 // allows us to perform extra operations on numbers
 
+// public class Test {
+
+//     public static void main(String[] args){
+
+// System.out.println(Math.abs(-10));
+// System.out.println(Math.max(3.6, 10.12));
+// System.out.println(Math.min(3, 5));
+// System.out.println(Math.pow(5.0, 2.0));
+// System.out.println(Math.sqrt(4.6));
+
+    
+
+// }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Comparison operator
+
+// public class Test {
+
+//     public static void main(String[] args){
+
+// int akAge = 38;
+// int mariamAge = 20;
+
+// // boolean whoIsOlder = akAge > mariamAge;
+
+// // System.out.println(whoIsOlder);
+    
+// System.out.println(akAge > mariamAge);
+// System.out.println(akAge < mariamAge);
+// System.out.println(akAge == mariamAge);
+// System.out.println(akAge != mariamAge); // != not equal
+
+// System.out.println(akAge >= mariamAge); // greater or equal
+// System.out.println(akAge <= mariamAge); // less or equal
+
+
+// }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Logical operators
+
 public class Test {
 
     public static void main(String[] args){
 
-System.out.println(Math.abs(-10));
-System.out.println(Math.max(3.6, 10.12));
-System.out.println(Math.min(3, 5));
-System.out.println(Math.pow(5.0, 2.0));
-System.out.println(Math.sqrt(4.6));
+int akAge = 38;
+int mariamAge = 20;
 
+// boolean whoIsOlder = akAge > mariamAge;
+
+// System.out.println(whoIsOlder);
     
+
 
 }
 }
