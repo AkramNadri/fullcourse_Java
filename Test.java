@@ -255,27 +255,27 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////
 
 // GENERATE RANDOM NUMBERS
-import java.util.Random;
+// import java.util.Random;
 
 
-public class Test {
-    public static void main(String[]args){
+// public class Test {
+//     public static void main(String[]args){
 
-        Random random = new Random();
+//         Random random = new Random();
 
-        // we pass in a value to nextInt method to set range of numbers to randomize.
-        int x = random.nextInt(6)+1;
+//         // we pass in a value to nextInt method to set range of numbers to randomize.
+//         int x = random.nextInt(6)+1;
 
 
-        double y = random.nextDouble(10)+1;
+//         double y = random.nextDouble(10)+1;
 
-        boolean z = random.nextBoolean();
+//         boolean z = random.nextBoolean();
 
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-    }
-}
+//         System.out.println(x);
+//         System.out.println(y);
+//         System.out.println(z);
+//     }
+// }
 
 
 ///////////////////////////////////////////////////////////
@@ -301,3 +301,51 @@ public class Test {
 // }
 
 // }
+
+///////////////////////////////////////////////////////////
+
+// Reserved key words are keywords which are used for the language itself. 
+
+// Example : package, public, class, static, etc...
+
+
+
+///////////////////////////////////////////////////////////
+
+// Arithmatic operations
+
+// public class Test {
+
+//     public static void main(String[] args){
+
+// int ten = 10;
+// int two = 2;
+
+// int addition = ten + two;
+// System.out.println(addition);
+
+//     }
+
+// }
+
+
+///////////////////////////////////////////////////////////
+
+// Math class
+
+// allows us to perform extra operations on numbers
+
+public class Test {
+
+    public static void main(String[] args){
+
+System.out.println(Math.abs(-10));
+System.out.println(Math.max(3.6, 10.12));
+System.out.println(Math.min(3, 5));
+System.out.println(Math.pow(5.0, 2.0));
+System.out.println(Math.sqrt(4.6));
+
+    
+
+}
+}
