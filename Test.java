@@ -1,5 +1,8 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+
+import javax.sound.sampled.SourceDataLine;
 
 // public class Test {
 //     public static void main(String[]args){
@@ -431,4 +434,179 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////
 
 // Ternary operator
+// should be used when you are evaluating one boolean expression. 
 
+// public class Test{
+
+//     public static void main(String[] args) {
+
+// int age = 15;
+// String message = age >= 18 ? "Is adult" : "not an adult";
+
+// System.out.println(message);
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Switch statement
+
+// public class Test{
+
+//     public static void main(String[] args){
+    
+//     String gender = "male";
+
+
+//     // if (gender.equals("female")){
+
+//     // } else if(gender.equals("male")){
+
+//     // } else if(gender.equals("prefer not to say")){
+
+//     // } else{
+
+//     // }
+
+//     switch (gender) {
+        
+//         case "female" :
+//         System.out.println("I am a female");
+//             break;
+
+//         case "male":
+//         System.out.println("I am a male");
+//             break;
+
+//         case "prefer not to say":
+//         System.out.println("prefer not to say");
+//             break;
+
+//         default:
+//         System.out.println("I am alien?");
+//     }
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Arrays - create one variable that holds more then one value.
+
+// public class Test{
+
+// public static void main(String[] args){
+
+// // with Array we must specify the size of the array
+// int [] numbers = new int[2];
+// // insert values into array
+// numbers[0] = 1;
+// numbers[1] = 2;
+
+// // another method of adding to an array
+// int [] numbersNew = {2, 0, 1, 100, -200};
+
+// // Array of boolean
+// boolean [] numbersBoolean = new boolean[3];
+
+// numbersBoolean[1] = true;
+
+// // Array of String
+// String [] stringArray = new String[4];
+
+// stringArray[3] = "last string in array";
+
+// System.out.println(Arrays.toString(numbers));
+// System.out.println(Arrays.toString(numbersBoolean));
+// System.out.println(Arrays.toString(stringArray));
+// System.out.println(Arrays.toString(numbersNew));
+// System.out.println(numbersNew.length);
+
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Arrays and indexes
+
+// public class Test{
+
+
+//     public static void main(String[] args){
+
+//         int [] numbers = {2, 1, 4, 5, 33, 532, 23};
+//         int positionInArray = numbers[4];
+//         int indexInArray = numbers.length;
+
+//         System.out.println(positionInArray);
+//         System.out.println(indexInArray);
+
+
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+
+// public class Test{
+
+
+//     public static void main(String[] args){
+
+// int [] numbers = {1, 3, 5, 6, 87, 34, 8, 34, 98};
+
+// int number = 0;
+// // increment
+// number++;
+// // decrement
+// number--;
+
+// number += 3;
+
+// number -=4;
+
+// number = number + 2;
+// number = number - 1;
+
+// System.out.println(number);
+        
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Enhanced for loop
+
+public class Test{
+
+public static void main(String[] args){
+
+int [] numbers = {3, 4, 5, 6, 7, 8, 9};
+
+
+    // benefit of using this for loop is having access to the index (int i = 0)
+    // we can set this for loop to start at desired index.
+    for(int i = 0; i < numbers.length; i++ ){
+        System.out.println(numbers[i]);
+    }
+
+    System.out.println("enhanced for loop");
+
+    // enhanced for loop takes all values in number and stores into number. We then print the variable number;
+    // dont have access to the index value (ex. int i = 0) will start automatically at the first index.
+for(int number : numbers) {
+    System.out.println(number);
+}
+
+// enhanced for loop with String
+String [] names = {"Ak", "Moe", "Has"};
+
+for(String name : names){
+    System.out.println(name);
+}
+
+System.out.println("forEach");
+Arrays.stream(numbers).forEach(System.out::println);
+}
+
+}
