@@ -381,18 +381,54 @@ import java.util.Scanner;
 
 // Logical operators
 
-public class Test {
+// public class Test {
 
-    public static void main(String[] args){
+//     public static void main(String[] args){
 
-int akAge = 38;
-int mariamAge = 20;
+//         String name = Mariam;
+// boolean isAdult = false;
+// boolean isStudent = true;
+// boolean isAmgigos = false;
 
-// boolean whoIsOlder = akAge > mariamAge;
+// // And operator - checks if both expressions are true, all expression must be true in order for this entire epression return true.
+// System.out.println(isAdult && isStudent);
 
-// System.out.println(whoIsOlder);
+// // Or operator - checks if a single part of the expression is true, will return true.
+// System.out.println(isAdult || isStudent);
     
+// System.out.println((isAdult || isStudent) && isAmgigos);
+
+// // Is not - how to flip the value.
+// System.out.println((!isAdult || isStudent) && !isAmgigos);
+
+// System.out.println(10 > 8 || 2 < 6 && isAdult && 
+// name.contains("M"));
+// }
+// }
 
 
-}
-}
+///////////////////////////////////////////////////////////
+
+// If statements
+
+// public class Test{
+
+//     public static void main(String[] args){
+
+// int age = 17;
+
+// if(age >= 18){
+//     System.out.println("Is an adult");
+// } else if (age >= 16 && age < 18){
+//     System.out.println("i am almost an adult");
+
+// } else {
+//     System.out.println("I am not an adult");
+// }
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Ternary operator
+
