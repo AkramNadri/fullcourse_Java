@@ -577,36 +577,63 @@ import javax.sound.sampled.SourceDataLine;
 
 // Enhanced for loop
 
+// public class Test{
+
+// public static void main(String[] args){
+
+// int [] numbers = {3, 4, 5, 6, 7, 8, 9};
+
+
+//     // benefit of using this for loop is having access to the index (int i = 0)
+//     // we can set this for loop to start at desired index.
+//     for(int i = 0; i < numbers.length; i++ ){
+//         System.out.println(numbers[i]);
+//     }
+
+//     System.out.println("enhanced for loop");
+
+//     // enhanced for loop takes all values in number and stores into number. We then print the variable number;
+//     // dont have access to the index value (ex. int i = 0) will start automatically at the first index.
+// for(int number : numbers) {
+//     System.out.println(number);
+// }
+
+// // enhanced for loop with String
+// String [] names = {"Ak", "Moe", "Has"};
+
+// for(String name : names){
+//     System.out.println(name);
+// }
+
+// System.out.println("forEach");
+// Arrays.stream(numbers).forEach(System.out::println);
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Break and continue
+
 public class Test{
 
 public static void main(String[] args){
 
-int [] numbers = {3, 4, 5, 6, 7, 8, 9};
+    String [] names = {"Ak", "Moe", "Has", "Anna"};
 
+    for(String name : names){
+        // if(name.equals("Has")){
+        //     break; // break simply breaks out of a loop.
+        // }
+        // System.out.println(name);
 
-    // benefit of using this for loop is having access to the index (int i = 0)
-    // we can set this for loop to start at desired index.
-    for(int i = 0; i < numbers.length; i++ ){
-        System.out.println(numbers[i]);
+        // example of continue
+        if(name.startsWith("A")){
+            continue; // will loop back up if the expression is held true. So if a name is found with "A" the continue will start back up to the top of the loop. 
+            // Does "Moe" start with "A" No, so continue here will not loop back up to the top, instead will drop down and print name.
+        }
+        System.out.println(name);
     }
-
-    System.out.println("enhanced for loop");
-
-    // enhanced for loop takes all values in number and stores into number. We then print the variable number;
-    // dont have access to the index value (ex. int i = 0) will start automatically at the first index.
-for(int number : numbers) {
-    System.out.println(number);
-}
-
-// enhanced for loop with String
-String [] names = {"Ak", "Moe", "Has"};
-
-for(String name : names){
-    System.out.println(name);
-}
-
-System.out.println("forEach");
-Arrays.stream(numbers).forEach(System.out::println);
 }
 
 }
