@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -615,25 +616,92 @@ import javax.sound.sampled.SourceDataLine;
 
 // Break and continue
 
+// public class Test{
+
+// public static void main(String[] args){
+
+//     String [] names = {"Ak", "Moe", "Has", "Anna"};
+
+//     for(String name : names){
+//         // if(name.equals("Has")){
+//         //     break; // break simply breaks out of a loop.
+//         // }
+//         // System.out.println(name);
+
+//         // example of continue
+//         if(name.startsWith("A")){
+//             continue; // will loop back up if the expression is held true. So if a name is found with "A" the continue will start back up to the top of the loop. 
+//             // Does "Moe" start with "A" No, so continue here will not loop back up to the top, instead will drop down and print name.
+//         }
+//         System.out.println(name);
+//     }
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// While loop - allows us to loop while a boolean expression evaluates to true.
+
+// public class Test{
+
+//  public static void main(String[]args){
+
+//     int count = 0;
+
+//     while(count <= 20){ // while runs the loop until the expression is true. As soon as its false it breaks out of the loop.
+// System.out.println("Count " + count);
+// count++;
+//     }
+//  }
+
+// }
+
+
+///////////////////////////////////////////////////////////
+
+// Do while - will execute atleast once.
+// the while loop will not execute atleast once.
+
+// public class Test{
+
+// public static void main(String[]args){
+
+//     int count = 0;
+
+//     do{ // this part will execute atleast once
+//         System.out.println(count);
+//         count++;
+
+//     } while(count <= 20);
+
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Scanner - take user input from the console
+// Taking user inputs
+
 public class Test{
 
-public static void main(String[] args){
 
-    String [] names = {"Ak", "Moe", "Has", "Anna"};
+    public static void main(String[] args){
 
-    for(String name : names){
-        // if(name.equals("Has")){
-        //     break; // break simply breaks out of a loop.
-        // }
-        // System.out.println(name);
+Scanner scanner = new Scanner(System.in);
 
-        // example of continue
-        if(name.startsWith("A")){
-            continue; // will loop back up if the expression is held true. So if a name is found with "A" the continue will start back up to the top of the loop. 
-            // Does "Moe" start with "A" No, so continue here will not loop back up to the top, instead will drop down and print name.
-        }
-        System.out.println(name);
+System.out.println("What is your name?");
+String userName = scanner.nextLine();
+
+System.out.println("Hello " + userName);
+
+System.out.println("How old are you?");
+int age = scanner.nextInt();
+
+int year = LocalDate.now().minusYears(age).getYear();
+System.out.println("You were born in " + year);
     }
 }
 
-}
+
