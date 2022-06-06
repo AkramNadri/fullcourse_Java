@@ -684,24 +684,142 @@ import javax.sound.sampled.SourceDataLine;
 // Scanner - take user input from the console
 // Taking user inputs
 
-public class Test{
+// public class Test{
 
 
-    public static void main(String[] args){
+//     public static void main(String[] args){
 
-Scanner scanner = new Scanner(System.in);
+// Scanner scanner = new Scanner(System.in);
 
-System.out.println("What is your name?");
-String userName = scanner.nextLine();
+// System.out.println("What is your name?");
+// String userName = scanner.nextLine();
 
-System.out.println("Hello " + userName);
+// System.out.println("Hello " + userName);
 
-System.out.println("How old are you?");
-int age = scanner.nextInt();
+// System.out.println("How old are you?");
+// int age = scanner.nextInt();
 
-int year = LocalDate.now().minusYears(age).getYear();
-System.out.println("You were born in " + year);
-    }
-}
+// int year = LocalDate.now().minusYears(age).getYear();
+// System.out.println("You were born in " + year);
+
+// if(age < 18){
+//     System.out.println("and you are not an Adult");
+// } else{
+//     System.out.println("You are an adult");
+// }
+//     }
+// }
+
+///////////////////////////////////////////////////////////
+
+// Methods - block of code which only runs when it is called
+// the parameters () in a method imply that we are invoking the method.
+
+// public class Test {
+
+// public static void main(String[]args){
+
+//     System.out.println("Hello");
+//     String brand = "Samsung";
+
+//     // toUpperCase() is a method, built in
+//     System.out.println(brand.toUpperCase());
+
+//     boolean startsWithS = brand.startsWith("S");
+//     boolean endsWithG = brand.endsWith("g");
+
+//     System.out.println(startsWithS);
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Understanding methods
+
+// public class Test {
+
+// public static void main(String[]args){
+//     char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+
+
+//     // calling the method
+//     int count = countOccurences(letters, searchLetters='A');
+//     System.out.println(count);
+
+// }
+
+// public static int countOccurences(
+//     char [] letters, char searchLetters){
+// int count = 0;
+
+//     // enhanced for loop
+//     for(char letter : letters ){
+//         if(letter == searchLetters){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// }
+
+///////////////////////////////////////////////////////////
+
+// Classes and objects
+
+// A class is a blueprint to create anything you want.
+
+
+// Creating a class
+
+// public class Test{
+
+//     public static void main(String[]args){
+
+
+//         // Creating objects using Lens class
+//         Lens lensOne = new Lens("Sony", "100mm", true);
+//         Lens lensTwo = new Lens("Nikon", "85mm", false);
+//         Lens lensThree = new Lens("Canon", "24-70mm", false);
+
+// System.out.println("Lens 1");
+// System.out.println(lensOne.brand);
+// System.out.println(lensOne.foculLength);
+// System.out.println(lensOne.isPrime);
+// System.out.println("");
+
+// System.out.println("Lens 2");
+// System.out.println(lensTwo.brand);
+// System.out.println(lensTwo.foculLength);
+// System.out.println(lensTwo.isPrime);
+// System.out.println("");
+
+// System.out.println("Lens 3");
+// System.out.println(lensThree.brand);
+// System.out.println(lensThree.foculLength);
+// System.out.println(lensThree.isPrime );
+// System.out.println("");
+
+//     }
+
+// // Classes must start with a capital letter.
+// static class Lens {
+
+//     // define properties
+//     String brand;
+//     String foculLength;
+//     boolean isPrime;
+
+
+//     // Constructor - how we construct objects
+//     Lens(String brand, String foculLength, boolean isPrime){
+//         this.brand = brand;
+//         this.foculLength = foculLength;
+//         this.isPrime = isPrime;
+//     }
+
+// }
+//     }
 
 
